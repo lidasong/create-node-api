@@ -14,6 +14,6 @@ app.use(logger())
 
 app.use(router.routes())
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     debuger('app:entry')
 })
